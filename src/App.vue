@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-    <h1 class="btn btn-success ">APP component</h1>
+   <div class="container">
+    <div class="grid">
+      <div class="row">
+        <div class="col">
+          <p class="h3 text-success fw-bold">App Component</p>
+          <PropsWork name="ratul" age="31" designation="software engineer"/>
+        </div>
+      </div>
+    </div>
+   </div>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+ import PropsWork from './components/PropsWork.vue'
 
 export default {
   name: 'App',
-  // components: {
-  //   HelloWorld
-  // }
+  components: {
+    PropsWork
+  }
 }
 </script>
 
