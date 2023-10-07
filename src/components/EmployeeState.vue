@@ -2,7 +2,7 @@
     <div class="container">
        <div class="row">
         <div class="col">
-            <p class="h3">Employee</p>
+            <p class="h3">Employee State Example</p>
             <ul class="list-group">
                 <li class="list-group-item">
                     Name:{{ employee.name }}
