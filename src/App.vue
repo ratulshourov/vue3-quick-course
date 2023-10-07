@@ -6,6 +6,7 @@
         <div class="col">
           <p class="h3 text-success fw-bold">App Component</p>
           <PropsWork name="ratul" age="31" designation="software engineer"/>
+         <EmployeeState/>
         </div>
       </div>
     </div>
@@ -15,12 +16,13 @@
 </template>
 
 <script>
- import PropsWork from './components/PropsWork.vue'
+ import PropsWork from './components/PropsWork.vue';
+ import EmployeeState from './components/EmployeeState.vue';
 
 export default {
   name: 'App',
   components: {
-    PropsWork
+    PropsWork,EmployeeState
   }
 }
 </script>
