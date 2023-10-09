@@ -8,11 +8,13 @@
           <PropsWork name="ratul" age="31" designation="software engineer"/>
          <EmployeeState/>
          <EventHandler/>
+         <RegisterForm/>
         </div>
       </div>
     </div>
    </div>
     <router-view></router-view>
+    
   </div>
 </template>
 
@@ -20,10 +22,11 @@
  import PropsWork from './components/PropsWork.vue';
  import EmployeeState from './components/EmployeeState.vue';
 import EventHandler from './components/EventHandler.vue';
+import RegisterForm from './components/RegisterForm.vue';
 export default {
   name: 'App',
   components: {
-    PropsWork,EmployeeState,EventHandler
+    PropsWork,EmployeeState,EventHandler,RegisterForm
   }
 }
 </script>
