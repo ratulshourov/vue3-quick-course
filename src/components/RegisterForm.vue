@@ -7,7 +7,7 @@
             <p class="h3">Register Page</p>
           </div>
           <div class="card-body bg-light">
-            <form action>
+            <form @submit.prevent="submit()">
               <div class="mb-2">
                 <input type="text" v-model="user.name" class="form-control" placeholder="Name" />
               </div>
@@ -38,6 +38,11 @@ export default {
         password: ""
       }
     };
+  },
+  methods:{
+    submit:function() {
+        console.log(this.user);
+    }
   }
 };
 </script>
