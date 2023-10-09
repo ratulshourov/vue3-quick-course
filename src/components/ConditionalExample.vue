@@ -12,7 +12,7 @@
                     Thank you for Login For Logout click logout
                 </div>
                 <div v-if="!this.loggedIn" class="cart-item bg-warning text-white">
-                   For login press login Button
+                   For login press   login Button
                 </div>
                 <button v-if="!this.loggedIn" class="btn btn-success" @click="loginWork()">Login</button>
                 <button v-if="this.loggedIn" class="btn btn-danger" @click="LogoutButton()">Logout</button>
