@@ -9,6 +9,7 @@
          <EmployeeState/>
          <EventHandler/>
          <RegisterForm/>
+         <ConditionalExample/>
         </div>
       </div>
     </div>
@@ -23,10 +24,11 @@
  import EmployeeState from './components/EmployeeState.vue';
 import EventHandler from './components/EventHandler.vue';
 import RegisterForm from './components/RegisterForm.vue';
+import ConditionalExample from './components/ConditionalExample.vue';
 export default {
   name: 'App',
   components: {
-    PropsWork,EmployeeState,EventHandler,RegisterForm
+    PropsWork,EmployeeState,EventHandler,RegisterForm,ConditionalExample
   }
 }
 </script>
