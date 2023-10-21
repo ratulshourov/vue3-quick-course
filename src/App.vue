@@ -9,7 +9,8 @@
          <EmployeeState/>
          <EventHandler/>
          <RegisterForm/>
-         <ConditionalExample/>
+         <ConditionalExample/> 
+         <AxiosComponent/> 
         </div>
       </div>
     </div>
@@ -25,10 +26,11 @@
 import EventHandler from './components/EventHandler.vue';
 import RegisterForm from './components/RegisterForm.vue';
 import ConditionalExample from './components/ConditionalExample.vue';
+import AxiosComponent from './components/AxiosComponent.vue';
 export default {
   name: 'App',
   components: {
-    PropsWork,EmployeeState,EventHandler,RegisterForm,ConditionalExample
+    PropsWork,EmployeeState,EventHandler,RegisterForm,ConditionalExample,AxiosComponent
   }
 }
 </script>

@@ -1,3 +1,5 @@
+
+
 export class EmployeeService {
     static employee =[
         {
@@ -170,7 +172,12 @@ export class EmployeeService {
         }
       ];
 
+
+
       static getAllEmployees() {
         return this.employee;
       }
+
+      
+
 }
