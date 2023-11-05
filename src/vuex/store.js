@@ -2,7 +2,7 @@ import { createStore } from "vuex";
 
 export default createStore ({
     state: {
-        name:'',
-        title:''
+        name:'ratul',
+        title:'vuex state set'
     }
 })
