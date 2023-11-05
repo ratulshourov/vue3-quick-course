@@ -12,6 +12,9 @@
          <ConditionalExample/> 
          <AxiosComponent/> 
          <ComputedComponent/>
+         <h1>Vuex Work Start From Here</h1>
+         <h3>Name value come from store {{ $store.state.name }}</h3>
+         <h3>Title Get : {{ $store.state.title }}</h3>
         </div>
       </div>
     </div>
