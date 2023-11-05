@@ -15,6 +15,11 @@
          <h1>Vuex Work Start From Here</h1>
          <h3>Name value come from store {{ $store.state.name }}</h3>
          <h3>Title Get : {{ $store.state.title }}</h3>
+         <div>
+          <h4>mutations Example  change the title </h4>
+          <button class="btn btn-primary" v-on:click="updateTitle">Mutations change title</button>
+         </div>
+         
         </div>
       </div>
     </div>
@@ -36,6 +41,11 @@ export default {
   name: 'App',
   components: {
     PropsWork,EmployeeState,EventHandler,RegisterForm,ConditionalExample,AxiosComponent,ComputedComponent
+  },
+  methods:{
+    updateTitle:function(){
+     this.$store.commit('changeTitle','Title changed via mutations');
+    }
   }
 }
 </script>
