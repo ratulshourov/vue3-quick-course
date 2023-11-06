@@ -49,7 +49,12 @@ export default {
      // another way for it i have to change changetile mutations pass object newtitle.title
      //this.$store.commit('changeTitle',{title:'Title changed via mutations'});
      // when i want to pass all as object 
-     this.$store.commit({type:'changeTitle',title:'Title changed via mutations'});
+     //this.$store.commit({type:'changeTitle',title:'Title changed via mutations'});
+     //using actions 
+     this.$store.dispatch({
+      type:'updateTitle',
+      title:'Title changed via actions'
+     })
     }
   }
 }

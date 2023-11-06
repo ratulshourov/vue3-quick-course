@@ -12,5 +12,13 @@ export default createStore ({
             //when pass with object
             state.title=newtitle.title
         }
+    },
+    actions:{
+        updateTitle:function(context,payload) {
+            setTimeout(() => {
+                context.commit('changeTitle',payload);
+            }, 2000);
+           
+        }
     }
 })
