@@ -19,7 +19,10 @@
           <h4>mutations Example  change the title </h4>
           <button class="btn btn-primary" v-on:click="updateTitle">Mutations change title</button>
          </div>
-         
+         <div>
+
+          <h2>Getter Value{{getValueFromGetter}}</h2>
+         </div>
         </div>
       </div>
     </div>
@@ -55,6 +58,11 @@ export default {
       type:'updateTitle',
       title:'Title changed via actions'
      })
+    }
+  },
+  computed:{
+    getValueFromGetter:function() {
+        return this.$store.getters.getKey;
     }
   }
 }
