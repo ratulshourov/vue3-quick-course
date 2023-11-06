@@ -7,7 +7,10 @@ export default createStore ({
     },
     mutations:{
         changeTitle:function(state,newtitle) {
-            state.title=newtitle
+            //when pass without object
+            //state.title=newtitle
+            //when pass with object
+            state.title=newtitle.title
         }
     }
 })

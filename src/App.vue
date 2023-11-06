@@ -44,7 +44,12 @@ export default {
   },
   methods:{
     updateTitle:function(){
-     this.$store.commit('changeTitle','Title changed via mutations');
+      //a way 
+     //this.$store.commit('changeTitle','Title changed via mutations');
+     // another way for it i have to change changetile mutations pass object newtitle.title
+     //this.$store.commit('changeTitle',{title:'Title changed via mutations'});
+     // when i want to pass all as object 
+     this.$store.commit({type:'changeTitle',title:'Title changed via mutations'});
     }
   }
 }
